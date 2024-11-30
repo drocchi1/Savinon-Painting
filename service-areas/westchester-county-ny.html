@@ -14,85 +14,8 @@
     </style>
 </head>
 <body class="pattern-bg">
-    <!-- Header/Navigation -->
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto px-4 py-6">
-            <div class="flex justify-between items-center">
-                <a href="../index.html" class="text-2xl font-bold text-blue-800">Savinon Painting</a>
-                <div class="hidden md:flex space-x-6">
-                    <!-- Services Dropdown -->
-                    <div class="relative group">
-                        <a href="../services.html" class="hover:text-blue-600 transition duration-200 py-2">
-                            Services
-                            <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </a>
-                        <!-- Services Dropdown Menu -->
-                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
-                            <a href="../interior-painting.html" class="block px-4 py-2 hover:bg-gray-100">Interior Painting</a>
-                            <a href="../exterior-painting.html" class="block px-4 py-2 hover:bg-gray-100">Exterior Painting</a>
-                            <a href="../deck-staining.html" class="block px-4 py-2 hover:bg-gray-100">Deck Staining</a>
-                            <a href="../sheetrock-taping.html" class="block px-4 py-2 hover:bg-gray-100">Sheetrock & Taping</a>
-                            <a href="../powerwashing.html" class="block px-4 py-2 hover:bg-gray-100">Powerwashing</a>
-                            <a href="../carpentry.html" class="block px-4 py-2 hover:bg-gray-100">Carpentry</a>
-                        </div>
-                    </div>
-
-                    <!-- Service Areas Dropdown -->
-                    <div class="relative group">
-                        <a href="../service-areas.html" class="hover:text-blue-600 transition duration-200 py-2">
-                            Service Areas
-                            <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </a>
-                        <!-- Service Areas Dropdown Menu -->
-                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
-                            <a href="rockland-county-ny.html" class="block px-4 py-2 hover:bg-gray-100">Rockland County, NY</a>
-                            <a href="westchester-county-ny.html" class="block px-4 py-2 hover:bg-gray-100">Westchester County, NY</a>
-                            <a href="bergen-county-nj.html" class="block px-4 py-2 hover:bg-gray-100">Bergen County, NJ</a>
-                        </div>
-                    </div>
-
-                    <div class="relative group">
-                        <a href="../contact.html" class="hover:text-blue-600 transition duration-200 py-2">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-gray-600 hover:text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Mobile Menu (hidden by default) -->
-            <div class="hidden md:hidden px-4 py-2 bg-gray-50">
-                <!-- Mobile Services Menu -->
-                <div class="py-2">
-                    <div class="font-semibold mb-2">Services</div>
-                    <a href="../interior-painting.html" class="block py-1 pl-4 hover:text-blue-600">Interior Painting</a>
-                    <a href="../exterior-painting.html" class="block py-1 pl-4 hover:text-blue-600">Exterior Painting</a>
-                    <a href="../deck-staining.html" class="block py-1 pl-4 hover:text-blue-600">Deck Staining</a>
-                    <a href="../sheetrock-taping.html" class="block py-1 pl-4 hover:text-blue-600">Sheetrock & Taping</a>
-                    <a href="../powerwashing.html" class="block py-1 pl-4 hover:text-blue-600">Powerwashing</a>
-                    <a href="../carpentry.html" class="block py-1 pl-4 hover:text-blue-600">Carpentry</a>
-                </div>
-                
-                <!-- Mobile Service Areas Menu -->
-                <div class="py-2">
-                    <div class="font-semibold mb-2">Service Areas</div>
-                    <a href="rockland-county-ny.html" class="block py-1 pl-4 hover:text-blue-600">Rockland County, NY</a>
-                    <a href="westchester-county-ny.html" class="block py-1 pl-4 hover:text-blue-600">Westchester County, NY</a>
-                    <a href="bergen-county-nj.html" class="block py-1 pl-4 hover:text-blue-600">Bergen County, NJ</a>
-                </div>
-                
-                <a href="../contact.html" class="block py-2 hover:text-blue-600">Contact Us</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Load Header -->
+   <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="relative h-[400px]">
@@ -287,37 +210,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gradient-to-br from-gray-900 to-blue-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Savinon Painting</h3>
-                    <p class="text-gray-400">Professional painting services for your home or business</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
-                    <p class="text-gray-400">Phone: <a href="tel:8456415560" class="hover:text-blue-300 transition">(845) 641-5560</a></p>
-                    <p class="text-gray-400">Email: <a href="mailto:info@savinonpainting.com" class="hover:text-blue-300 transition">info@savinonpainting.com</a></p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Service Areas</h3>
-                    <a href="rockland-county-ny.html" class="block text-gray-400 hover:text-blue-300 transition">Rockland County, NY</a>
-                    <a href="westchester-county-ny.html" class="block text-gray-400 hover:text-blue-300 transition">Westchester County, NY</a>
-                    <a href="bergen-county-nj.html" class="block text-gray-400 hover:text-blue-300 transition">Bergen County, NJ</a>
-                </div>
-            </div>
-            <div class="text-center mt-8 pt-8 border-t border-gray-800">
-                <p class="text-gray-400">&copy; 2024 Savinon Painting. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Load Footer -->
+    <div id="footer"></div>
 
-    <!-- Add JavaScript for mobile menu toggle -->
-    <script>
-        document.querySelector('button').addEventListener('click', function() {
-            document.querySelector('.md\\:hidden.px-4').classList.toggle('hidden');
-        });
-    </script>
+    <!-- Load Header and Footer Script -->
+    <script src="../loadheaderfooter.js"></script>
 </body>
 </html>

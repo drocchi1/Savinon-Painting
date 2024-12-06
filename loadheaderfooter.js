@@ -5,7 +5,9 @@ function loadHeader() {
         <header class="bg-white shadow-md">
             <nav class="container mx-auto px-4 py-6">
                 <div class="flex justify-between items-center">
-                    <a href="/index.html" class="text-2xl font-bold text-blue-800">Savinon Painting</a>
+                    <a href="/index.html" class="text-2xl font-bold text-green-600">
+                        <img src="/images/logo.jpg" alt="Savinon Painting Logo" class="h-14">
+                    </a>
                     <div class="hidden md:flex space-x-6 relative">
                         <div class="group relative">
                             <a href="/services.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
@@ -45,39 +47,38 @@ function loadHeader() {
 }
 
 function loadFooter() {
-
     // Load the footer content
     document.getElementById('footer').innerHTML = `
-        <footer class="bg-gray-800 text-white py-8">
+        <footer class="bg-white text-green-600 py-8"> <!-- Background color -->
             <div class="container mx-auto px-4">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="mb-4 md:mb-0">
-                        <h3 class="text-lg font-semibold">Contact Us</h3>
-                        <p class="text-sm">Email: <a href="mailto:SavinonPainting@yahoo.com" class="text-blue-400 hover:underline">SavinonPainting@yahoo.com</a></p>
-                        <p class="text-sm">Phone: <a href="tel:+18456415560" class="text-blue-400 hover:underline">(845) 641-5560</a></p>
+                        <h3 class="text-lg font-semibold text-black">Contact Us</h3> <!-- Updated to black -->
+                        <p class="text-sm">Email: <a href="mailto:SavinonPainting@yahoo.com" class="text-green-500 hover:underline">SavinonPainting@yahoo.com</a></p>
+                        <p class="text-sm">Phone: <a href="tel:+18456415560" class="text-green-500 hover:underline">(845) 641-5560</a></p>
                         <p class="text-sm">Address: 127 Hudson Ave, Haverstraw, NY 10927</p>
                     </div>
                     <div class="mb-4 md:mb-0">
-                        <h3 class="text-lg font-semibold">Quick Links</h3>
+                        <h3 class="text-lg font-semibold text-black">Quick Links</h3> <!-- Updated to black -->
                         <ul class="list-none">
-                            <li><a href="/index.html" class="text-blue-400 hover:underline">Home</a></li>
-                            <li><a href="/services.html" class="text-blue-400 hover:underline">Services</a></li>
-                            <li><a href="/service-areas.html" class="text-blue-400 hover:underline">Service Areas</a></li>
-                            <li><a href="/contact-us.html" class="text-blue-400 hover:underline">Contact Us</a></li>
+                            <li><a href="/index.html" class="text-green-500 hover:underline">Home</a></li>
+                            <li><a href="/services.html" class="text-green-500 hover:underline">Services</a></li>
+                            <li><a href="/service-areas.html" class="text-green-500 hover:underline">Service Areas</a></li>
+                            <li><a href="/contact-us.html" class="text-green-500 hover:underline">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="mb-4 md:mb-0">
-                        <h3 class="text-lg font-semibold">Follow Us</h3>
+                        <h3 class="text-lg font-semibold text-black">Follow Us</h3> <!-- Updated to black -->
                         <div class="flex space-x-4">
-                            <a href="https://www.facebook.com" target="_blank" class="text-blue-400 hover:underline">Facebook</a>
-                            <a href="https://www.instagram.com" target="_blank" class="text-blue-400 hover:underline">Instagram</a>
-                            <a href="https://www.linkedin.com" target="_blank" class="text-blue-400 hover:underline">LinkedIn</a>
+                            <a href="https://www.facebook.com" target="_blank" class="text-green-500 hover:underline">Facebook</a>
+                            <a href="https://www.instagram.com" target="_blank" class="text-green-500 hover:underline">Instagram</a>
+                            <a href="https://www.linkedin.com" target="_blank" class="text-green-500 hover:underline">LinkedIn</a>
                         </div>
                     </div>
                 </div>
                 <div class="mt-6 text-center">
-                    <p class="text-sm">© 2023 Savinon Painting. All rights reserved.</p>
-                    <p class="text-sm">Serving Rockland County, Westchester County, and Bergen County with professional painting services.</p>
+                    <p class="text-sm text-black">© 2023 Savinon Painting. All rights reserved.</p> <!-- Updated to black -->
+                    <p class="text-sm text-black">Serving Rockland County, Westchester County, and Bergen County with professional painting services.</p> <!-- Updated to black -->
                 </div>
             </div>
         </footer>

@@ -26,7 +26,7 @@ function loadHeader() {
                             </div>
                         </div>
                         <div class="group relative">
-                            <a href="service-areas.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
+                            <a href="/service-areas.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
                                 Service Areas
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M5.23 7.21a.75.75 0 011.06 0L10 10.44l3.71-3.23a.75.75 0 111.06 1.06l-4.25 3.5a.75.75 0 01-1.06 0l-4.25-3.5a.75.75 0 010-1.06z"/></svg>
                             </a>
@@ -38,7 +38,7 @@ function loadHeader() {
                                 </div>
                             </div>
                         </div>
-                        <a href="contact-us.html" class="hover:text-blue-600 transition duration-200 py-2">Contact Us</a>
+                        <a href="/index.html#contact" class="hover:text-blue-600 transition duration-200 py-2">Contact Us</a>
                     </div>
                 </div>
             </nav>

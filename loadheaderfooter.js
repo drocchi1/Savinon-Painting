@@ -53,13 +53,14 @@ function loadHeader() {
     `;
 
     // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
     });
-}
 
 function loadFooter() {
     document.getElementById('footer').innerHTML = `
@@ -98,7 +99,6 @@ function loadFooter() {
         </footer>
     `;
 }
-
 // Call the functions to load header and footer
 loadHeader();
-loadFooter();
+loadFooter();}

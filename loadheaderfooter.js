@@ -87,9 +87,7 @@ function loadFooter() {
                     <div class="mb-4 md:mb-0 w-full md:w-1/3">
                         <h3 class="text-lg font-semibold text-black">Follow Us</h3>
                         <div class="flex space-x-4">
-                            <a href="https://www.facebook.com" target="_blank" class="text-green-500 hover:underline">Facebook</a>
-                            <a href="https://www.instagram.com" target="_blank" class="text-green-500 hover:underline">Instagram</a>
-                            <a href="https://www.linkedin.com" target="_blank" class="text-green-500 hover:underline">LinkedIn</a>
+                            <a href="https://www.facebook.com/people/Savinon-Painting-LLC/100090055245142/?mibextid=LQQJ4d&rdid=bEznVZdDjiRLyC86&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14yG5XSthp%2F%3Fmibextid%3DLQQJ4d" target="_blank" class="text-green-500 hover:underline">Facebook</a>
                         </div>
                     </div>
                 </div>

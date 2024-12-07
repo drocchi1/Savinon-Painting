@@ -8,6 +8,13 @@ function loadHeader() {
                     <a href="/index.html" class="text-2xl font-bold text-green-600">
                         <img src="/images/logo.jpg" alt="Savinon Painting Logo" class="h-14">
                     </a>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-green-600 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
                     <div class="hidden md:flex space-x-6 relative">
                         <div class="group relative">
                             <a href="/services.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
@@ -44,31 +51,38 @@ function loadHeader() {
             </nav>
         </header>
     `;
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 }
 
 function loadFooter() {
-    // Load the footer content
     document.getElementById('footer').innerHTML = `
-        <footer class="bg-white text-green-600 py-8"> <!-- Background color -->
+        <footer class="bg-white text-green-600 py-8">
             <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="mb-4 md:mb-0">
-                        <h3 class="text-lg font-semibold text-black">Contact Us</h3> <!-- Updated to black -->
+                <div class="flex flex-col md:flex-row justify-between items-start">
+                    <div class="mb-4 md:mb-0 w-full md:w-1/3">
+                        <h3 class="text-lg font-semibold text-black">Contact Us</h3>
                         <p class="text-sm">Email: <a href="mailto:SavinonPainting@yahoo.com" class="text-green-500 hover:underline">SavinonPainting@yahoo.com</a></p>
                         <p class="text-sm">Phone: <a href="tel:+18456415560" class="text-green-500 hover:underline">(845) 641-5560</a></p>
                         <p class="text-sm">Address: 127 Hudson Ave, Haverstraw, NY 10927</p>
                     </div>
-                    <div class="mb-4 md:mb-0">
-                        <h3 class="text-lg font-semibold text-black">Quick Links</h3> <!-- Updated to black -->
+                    <div class="mb-4 md:mb-0 w-full md:w-1/3">
+                        <h3 class="text-lg font-semibold text-black">Quick Links</h3>
                         <ul class="list-none">
                             <li><a href="/index.html" class="text-green-500 hover:underline">Home</a></li>
                             <li><a href="/services.html" class="text-green-500 hover:underline">Services</a></li>
                             <li><a href="/service-areas.html" class="text-green-500 hover:underline">Service Areas</a></li>
-                            <li><a href="/contact-us.html" class="text-green-500 hover:underline">Contact Us</a></li>
+                            <li><a href="/index.html#contact" class="text-green-500 hover:underline">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="mb-4 md:mb-0">
-                        <h3 class="text-lg font-semibold text-black">Follow Us</h3> <!-- Updated to black -->
+                    <div class="mb-4 md:mb-0 w-full md:w-1/3">
+                        <h3 class="text-lg font-semibold text-black">Follow Us</h3>
                         <div class="flex space-x-4">
                             <a href="https://www.facebook.com" target="_blank" class="text-green-500 hover:underline">Facebook</a>
                             <a href="https://www.instagram.com" target="_blank" class="text-green-500 hover:underline">Instagram</a>
@@ -77,8 +91,8 @@ function loadFooter() {
                     </div>
                 </div>
                 <div class="mt-6 text-center">
-                    <p class="text-sm text-black">© 2023 Savinon Painting. All rights reserved.</p> <!-- Updated to black -->
-                    <p class="text-sm text-black">Serving Rockland County, Westchester County, and Bergen County with professional painting services.</p> <!-- Updated to black -->
+                    <p class="text-sm text-black">© 2023 Savinon Painting. All rights reserved.</p>
+                    <p class="text-sm text-black">Serving Rockland County, Westchester County, and Bergen County with professional painting services.</p>
                 </div>
             </div>
         </footer>

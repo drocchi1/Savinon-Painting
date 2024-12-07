@@ -1,5 +1,4 @@
 // loadHeaderFooter.js
-
 function loadHeader() {
     document.getElementById('header').innerHTML = `
         <header class="bg-white shadow-md">
@@ -9,13 +8,18 @@ function loadHeader() {
                         <img src="/images/logo.jpg" alt="Savinon Painting Logo" class="h-14">
                     </a>
                     <div class="md:hidden">
-                        <button id="mobile-menu-button" class="text-green-600 focus:outline-none">
+                        <button id="mobile-menu-button" class="text-bg-gray-600 focus:outline-none">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                             </svg>
                         </button>
                     </div>
-                    <div class="hidden md:flex space-x-6 relative">
+                    <div id="mobile-menu-small" class="hidden md:hidden"> <!-- Mobile menu hidden on medium screens and up -->
+                         <a href="/services.html" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Services</a>
+                         <a href="/service-areas.html" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Service Areas</a>
+                         <a href="/index.html#contact" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Contact Us</a>
+                    </div>
+                    <div id="desktop-menu" class="hidden md:flex space-x-6 relative">
                         <div class="group relative">
                             <a href="/services.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
                                 Services
@@ -54,15 +58,15 @@ function loadHeader() {
 
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuSmall = document.getElementById('mobile-menu-small');
 
-    // Ensure the mobile menu exists before adding the event listener
-    if (mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
+if (mobileMenuButton && mobileMenuSmall) {
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenuSmall.classList.toggle('hidden');
+    });
 }
+}
+
 
 function loadFooter() {
     document.getElementById('footer').innerHTML = `
@@ -70,24 +74,24 @@ function loadFooter() {
             <div class="container mx-auto px-4">
                 <div class="flex flex-col md:flex-row justify-between items-start">
                     <div class="mb-4 md:mb-0 w-full md:w-1/3">
-                        <h3 class="text-lg font-semibold text-black">Contact Us</h3>
-                        <p class="text-sm">Email: <a href="mailto:SavinonPainting@yahoo.com" class="text-green-500 hover:underline">SavinonPainting@yahoo.com</a></p>
-                        <p class="text-sm">Phone: <a href="tel:+18456415560" class="text-green-500 hover:underline">(845) 641-5560</a></p>
-                        <p class="text-sm">Address: 127 Hudson Ave, Haverstraw, NY 10927</p>
+                        <h3 class="text-lg font-semibold text-green-600">Contact Us</h3>
+                        <p class="text-sm text-black">Email: <a href="mailto:SavinonPainting@yahoo.com" class="text-black hover:underline">SavinonPainting@yahoo.com</a></p>
+                        <p class="text-sm text-black">Phone: <a href="tel:+18456415560" class="text-black hover:underline">(845) 641-5560</a></p>
+                        <p class="text-sm text-black">Address: 127 Hudson Ave, Haverstraw, NY 10927</p>
                     </div>
                     <div class="mb-4 md:mb-0 w-full md:w-1/3">
-                        <h3 class="text-lg font-semibold text-black">Quick Links</h3>
+                        <h3 class="text-lg font-semibold text-green-600">Quick Links</h3>
                         <ul class="list-none">
-                            <li><a href="/index.html" class="text-green-500 hover:underline">Home</a></li>
-                            <li><a href="/services.html" class="text-green-500 hover:underline">Services</a></li>
-                            <li><a href="/service-areas.html" class="text-green-500 hover:underline">Service Areas</a></li>
-                            <li><a href="/index.html#contact" class="text-green-500 hover:underline">Contact Us</a></li>
+                            <li><a href="/index.html" class="text-black hover:underline">Home</a></li>
+                            <li><a href="/services.html" class="text-black hover:underline">Services</a></li>
+                            <li><a href="/service-areas.html" class="text-black hover:underline">Service Areas</a></li>
+                            <li><a href="/index.html#contact" class="text-black hover:underline">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="mb-4 md:mb-0 w-full md:w-1/3">
-                        <h3 class="text-lg font-semibold text-black">Follow Us</h3>
+                        <h3 class="text-lg font-semibold text-green-600">Follow Us</h3>
                         <div class="flex space-x-4">
-                            <a href="https://www.facebook.com/people/Savinon-Painting-LLC/100090055245142/?mibextid=LQQJ4d&rdid=bEznVZdDjiRLyC86&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14yG5XSthp%2F%3Fmibextid%3DLQQJ4d" target="_blank" class="text-green-500 hover:underline">Facebook</a>
+                            <a href="https://www.facebook.com/people/Savinon-Painting-LLC/100090055245142/?mibextid=LQQJ4d&rdid=bEznVZdDjiRLyC86&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14yG5XSthp%2F%3Fmibextid%3DLQQJ4d" target="_blank" class="text-black hover:underline">Facebook</a>
                         </div>
                     </div>
                 </div>
@@ -100,5 +104,7 @@ function loadFooter() {
     `;
 }
 // Call the functions to load header and footer
-loadHeader();
-loadFooter();
+document.addEventListener('DOMContentLoaded', () => {
+    loadHeader();
+    loadFooter();
+});

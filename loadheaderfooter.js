@@ -4,7 +4,7 @@ function loadHeader() {
         <header class="bg-white shadow-md">
             <nav class="container mx-auto px-4 py-6">
                 <div class="flex justify-between items-center">
-                    <a href="/index.html" class="text-2xl font-bold text-green-600">
+                    <a href="/" class="text-2xl font-bold text-green-600">
                         <img src="/images/logo.jpg" alt="Savinon Painting Logo" class="h-14">
                     </a>
                     <div class="md:hidden">
@@ -15,41 +15,41 @@ function loadHeader() {
                         </button>
                     </div>
                     <div id="mobile-menu-small" class="hidden md:hidden"> <!-- Mobile menu hidden on medium screens and up -->
-                         <a href="/services.html" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Services</a>
-                         <a href="/service-areas.html" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Service Areas</a>
-                         <a href="/index.html#contact" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Contact Us</a>
+                         <a href="/services" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Services</a>
+                         <a href="/service-areas" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Service Areas</a>
+                         <a href="/#contact" class="block px-4 py-2 text-bg-gray-600 hover:bg-gray-100">Contact Us</a>
                     </div>
                     <div id="desktop-menu" class="hidden md:flex space-x-6 relative">
                         <div class="group relative">
-                            <a href="/services.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
+                            <a href="/services" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
                                 Services
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M5.23 7.21a.75.75 0 011.06 0L10 10.44l3.71-3.23a.75.75 0 111.06 1.06l-4.25 3.5a.75.75 0 01-1.06 0l-4.25-3.5a.75.75 0 010-1.06z"/></svg>
                             </a>
                             <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg z-10 pt-2 -mt-2">
                                 <div class="p-2">
-                                    <a href="/services/interior-painting.html" class="block px-4 py-2 hover:bg-gray-100">Interior Painting</a>
-                                    <a href="/services/exterior-painting.html" class="block px-4 py-2 hover:bg-gray-100">Exterior Painting</a>
-                                    <a href="/services/deck-staining.html" class="block px-4 py-2 hover:bg-gray-100">Deck Staining</a>
-                                    <a href="/services/sheetrock-taping.html" class="block px-4 py-2 hover:bg-gray-100">Sheetrock & Taping</a>
-                                    <a href="/services/powerwashing.html" class="block px-4 py-2 hover:bg-gray-100">Powerwashing</a>
-                                    <a href="/services/carpentry.html" class="block px-4 py-2 hover:bg-gray-100">Carpentry</a>
+                                    <a href="/services/interior-painting" class="block px-4 py-2 hover:bg-gray-100">Interior Painting</a>
+                                    <a href="/services/exterior-painting" class="block px-4 py-2 hover:bg-gray-100">Exterior Painting</a>
+                                    <a href="/services/deck-staining" class="block px-4 py-2 hover:bg-gray-100">Deck Staining</a>
+                                    <a href="/services/sheetrock-taping" class="block px-4 py-2 hover:bg-gray-100">Sheetrock & Taping</a>
+                                    <a href="/services/powerwashing" class="block px-4 py-2 hover:bg-gray-100">Powerwashing</a>
+                                    <a href="/services/carpentry" class="block px-4 py-2 hover:bg-gray-100">Carpentry</a>
                                 </div>
                             </div>
                         </div>
                         <div class="group relative">
-                            <a href="/service-areas.html" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
+                            <a href="/service-areas" class="flex items-center hover:text-blue-600 transition duration-200 py-2 focus:outline-none">
                                 Service Areas
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M5.23 7.21a.75.75 0 011.06 0L10 10.44l3.71-3.23a.75.75 0 111.06 1.06l-4.25 3.5a.75.75 0 01-1.06 0l-4.25-3.5a.75.75 0 010-1.06z"/></svg>
                             </a>
                             <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg z-10 pt-2 -mt-2">
                                 <div class="p-2">
-                                    <a href="/service-areas/bergen-county-nj.html" class="block px-4 py-2 hover:bg-gray-100">Bergen County</a>
-                                    <a href="/service-areas/rockland-county-ny.html" class="block px-4 py-2 hover:bg-gray-100">Rockland County</a>
-                                    <a href="/service-areas/westchester-county-ny.html" class="block px-4 py-2 hover:bg-gray-100">Westchester County</a>
+                                    <a href="/service-areas/bergen-county-nj" class="block px-4 py-2 hover:bg-gray-100">Bergen County</a>
+                                    <a href="/service-areas/rockland-county-ny" class="block px-4 py-2 hover:bg-gray-100">Rockland County</a>
+                                    <a href="/service-areas/westchester-county-ny" class="block px-4 py-2 hover:bg-gray-100">Westchester County</a>
                                 </div>
                             </div>
                         </div>
-                        <a href="/index.html#contact" class="hover:text-blue-600 transition duration-200 py-2">Contact Us</a>
+                        <a href="/#contact" class="hover:text-blue-600 transition duration-200 py-2">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -82,10 +82,10 @@ function loadFooter() {
                     <div class="mb-4 md:mb-0 w-full md:w-1/3">
                         <h3 class="text-lg font-semibold text-green-600">Quick Links</h3>
                         <ul class="list-none">
-                            <li><a href="/index.html" class="text-black hover:underline">Home</a></li>
-                            <li><a href="/services.html" class="text-black hover:underline">Services</a></li>
-                            <li><a href="/service-areas.html" class="text-black hover:underline">Service Areas</a></li>
-                            <li><a href="/index.html#contact" class="text-black hover:underline">Contact Us</a></li>
+                            <li><a href="/" class="text-black hover:underline">Home</a></li>
+                            <li><a href="/services" class="text-black hover:underline">Services</a></li>
+                            <li><a href="/service-areas" class="text-black hover:underline">Service Areas</a></li>
+                            <li><a href="/#contact" class="text-black hover:underline">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="mb-4 md:mb-0 w-full md:w-1/3">

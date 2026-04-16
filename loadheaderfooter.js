@@ -32,7 +32,7 @@ function loadHeader() {
                                     <a href="/services/deck-staining" class="block px-4 py-2 hover:bg-gray-100">Deck Staining</a>
                                     <a href="/services/sheetrock-taping" class="block px-4 py-2 hover:bg-gray-100">Sheetrock & Taping</a>
                                     <a href="/services/powerwashing" class="block px-4 py-2 hover:bg-gray-100">Powerwashing</a>
-                                    <a href="/services/carpentry" class="block px-4 py-2 hover:bg-gray-100">Carpentry</a>
+                                    <a href="/services/carpentry" class="block px-4 py-2 hover:bg-gray-100">Cabinet Painting</a>
                                 </div>
                             </div>
                         </div>
